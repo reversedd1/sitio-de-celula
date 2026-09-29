@@ -1,0 +1,61 @@
+body{
+  padding: 25px;
+  background-image: url(https://fernandocresta.github.io/sitio-de-celula/images/fondo_pantallas.jpg);
+}
+.title {
+	color: #5C6AC4;
+}
+.celula,.celula2{
+    text-align: center;
+}   
+.celula{
+    text-align: center;
+    background-color: pink;
+    border: 1px solid blue;
+}
+footer {
+    font-size: 11px;
+}
+footer h3 {
+    margin: 0 0 0 0;
+}
+footer p {
+    margin: 1px 0;
+}
+.contene_cel{
+    display: flex;
+    justify-content: center;
+}
+.contene_diapo img {
+    display: block;      /* una debajo de la otra */
+    width: 100%;         /* ocupa todo el ancho disponible */
+    max-width: 800px;    /* tamaño máximo */
+    height: auto;        /* conserva proporciones */
+    margin: 10px auto;   /* centradas */
+}
+.parrafo1{
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+.contenedor_nav{
+    border:1px solid blue;
+    display: flex; 
+    gap: 30px; 
+    justify-content: center;
+}  
+.contenedor_videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+.contenedor_videos iframe{
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 2px solid #0b7dda;
+    border-radius: 10px;
+}

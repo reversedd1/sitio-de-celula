@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Videos</title>
+</head>
+
+<body>
+ <header>
+    <h2 class="celula2">Videos relacionados con ciencia celular</h2>
+     </header>
+ <main>
+    <p class="parrafo1">
+        En esta sección encontrarás videos sobre los conceptos celulares básicos y algunas aplicaciones del conocimiento de las células 
+        como la bioimpresión 3D y el uso de células madre para reparar tejidos dañados y desarrollar órganos 
+        destinados a trasplantes.
+    </p>
+    <div class="contenedor_videos">
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/aoj9oTvVJ8o"
+            title="Video sobre conocimientos básicos"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/vnwtV_PykZU"
+            title="Video sobre bio impresión 3d 1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/mEwoMov3B9U"
+            title="Video sobre bio impresión 3d 2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/dAl353YuTkI"
+            title="Video sobre células madre 1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/r4gtN4aWUtU"
+            title="Video sobre células madre 2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <hr> <!-- inidica una raya -->
+    
+    <div id="menu"></div>
+    <script>
+    fetch("menu.html")
+    .then(response => response.text())
+    .then(data => {
+          document.getElementById("menu").innerHTML = data;
+    });
+    </script>
+    <hr>
+</main>
+<br/>
+</body>
+
+</html>

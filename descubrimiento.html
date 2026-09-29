@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Descubrimiento</title>
+</head>
+
+<body>
+ <header>
+    <h2 class="celula2">Descubrimiento de las células</h2>
+     </header>
+ <main>
+    <div class="contene_diapo">
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag4.jpg" alt="Descubrimiento 1">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag5.jpg" alt="Descubrimiento 2">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag6.jpg" alt="Descubrimiento 3">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag7.jpg" alt="Descubrimiento 4">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag8.jpg" alt="Descubrimiento 5">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag9.jpg" alt="Descubrimiento 6">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag10.jpg" alt="Descubrimiento 7">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag11.jpg" alt="Descubrimiento 8">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag12.jpg" alt="Descubrimiento 9">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag13.jpg" alt="Descubrimiento 10">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag14.jpg" alt="Descubrimiento 11">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag15.jpg" alt="Descubrimiento 12">
+       <br>
+    </div>
+    <hr> <!-- inidica una raya -->
+    
+    <div id="menu"></div>
+    <script>
+    fetch("menu.html")
+    .then(response => response.text())
+    .then(data => {
+          document.getElementById("menu").innerHTML = data;
+    });
+    </script>
+    <hr>
+</main>
+<br/>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>La Célula</title>
+</head>
+
+<body>
+ <header>
+     <h1 class="celula">La Célula</h1>
+     <h2 class="celula2">La unidad básica de la vida</h2>
+ </header>
+ <main>
+    <div class="contene_cel">
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/celula_portada.png" alt="Imagen de una célula" width="200px">
+    </div>
+    <p class="parrafo1">
+        Todos los seres vivos están formados por una o más células.
+        En este sitio aprenderás qué son las células, cómo se clasifican,
+        cuáles son sus partes y por qué son tan importantes para la vida.
+    </p>
+    
+    <hr> <!-- inidica una raya -->
+
+    <div id="menu"></div>
+    <script>
+    fetch("menu.html")
+    .then(response => response.text())
+    .then(data => {
+          document.getElementById("menu").innerHTML = data;
+    });
+    </script>
+    <hr>
+</main>
+<br />
+<footer>
+    <h3>Fuentes</h3>
+    <p>Coordinación: Prof. Mariana Ivanoff.</p>
+    <p>Diseño del sitio: Alumnos 2.º Año - CFP Nº 6.</p>
+    <p>Contenidos: Prof. Marina Argañaráz.</p>
+    <p>Dirección: Prof. Fernando Cresta.</p>
+    
+    <p>Correo electrónico:
+        <a href="mailto:profesorcresta@gmail.com">
+            profesorcresta@gmail.com
+        </a>
+    </p>
+</footer>
+</body>
+</html>

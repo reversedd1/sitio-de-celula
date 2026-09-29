@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bacterias</title>
+</head>
+
+<body>
+ <header>
+    <h2 class="celula2">Las bacterias y los seres vivos</h2>
+     </header>
+ <main>
+    <div class="contene_diapo">
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag47.jpg" alt="Bacteria 1">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag48.jpg" alt="Bacteria 2">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag49.jpg" alt="Bacteria 3">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag50.jpg" alt="Bacteria 4">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag51.jpg" alt="Bacteria 5">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag52.jpg" alt="Bacteria 6">
+       <br>
+    </div>
+        <hr> <!-- inidica una raya -->
+    
+    <div id="menu"></div>
+    <script>
+    fetch("menu.html")
+    .then(response => response.text())
+    .then(data => {
+          document.getElementById("menu").innerHTML = data;
+    });
+    </script>
+    <hr>
+</main>
+<br/>
+</body>
+
+</html>

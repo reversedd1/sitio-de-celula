@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Antibioticos</title>
+</head>
+
+<body>
+ <header>
+    <h2 class="celula2">Antibióticos y resistencia bacteriana</h2>
+     </header>
+ <main>
+    <div class="contene_diapo">
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag63.jpg" alt="Antibiotico 1">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag65.jpg" alt="Antibiotico 2">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag66.jpg" alt="Antibiotico 3">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag67.jpg" alt="Antibiotico 4">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag70.jpg" alt="Antibiotico 5">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag71.jpg" alt="Antibiotico 6">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag72.jpg" alt="Antibiotico 7">
+       <br>
+    </div>
+    <hr> <!-- inidica una raya -->
+    
+    <div id="menu"></div>
+    <script>
+    fetch("menu.html")
+    .then(response => response.text())
+    .then(data => {
+          document.getElementById("menu").innerHTML = data;
+    });
+    </script>
+    <hr>
+</main>
+<br/>
+</body>
+
+</html>

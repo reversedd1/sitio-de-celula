@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Diversidad</title>
+</head>
+
+<body>
+ <header>
+    <h2 class="celula2">Diversidad celular</h2>
+     </header>
+ <main>
+    <div class="contene_diapo">
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag16.jpg" alt="Diversidad 1">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag17.jpg" alt="Diversidad 2">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag18.jpg" alt="Diversidad 3">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag19.jpg" alt="Diversidad 4">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag20.jpg" alt="Diversidad 5">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag21.jpg" alt="Diversidad 6">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag22.jpg" alt="Diversidad 7">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag23.jpg" alt="Diversidad 8">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag24.jpg" alt="Diversidad 9">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag25.jpg" alt="Diversidad 10">
+       <br>
+       <img class="contene_cel" src="https://fernandocresta.github.io/sitio-de-celula/images/pag26.jpg" alt="Diversidad 11">
+       <br>
+    </div>
+    <hr> <!-- inidica una raya -->
+    
+    <div id="menu"></div>
+    <script>
+    fetch("menu.html")
+    .then(response => response.text())
+    .then(data => {
+          document.getElementById("menu").innerHTML = data;
+    });
+    </script>
+    <hr>
+</main>
+<br/>
+</body>
+
+</html>
